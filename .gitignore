@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+vsr_env/
+venv/
+.venv/
+env/
+
+# Model weights and checkpoints (too large for GitHub)
+models/
+qwen3b_model/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Data, experiment outputs, logs
+data/
+LRS2/
+main_mouth96/
+labels/
+runs/
+results/
+*.jsonl
+*.csv
+*.log
+
+# Secrets and local settings
+.env
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
