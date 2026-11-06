@@ -1,0 +1,41 @@
+# =============================================================================
+# Lip Reading System — Python dependencies
+#
+# Tested environment: Python 3.10 or 3.11 on Windows 10/11 and Linux.
+# Install with:  pip install -r requirements.txt
+# =============================================================================
+
+# --- Core deep learning stack ---
+torch>=2.4.0,<3.0.0
+torchvision>=0.19.0,<1.0.0
+torchaudio>=2.4.0,<3.0.0
+
+# --- HuggingFace ecosystem for Qwen2.5 LLM rescoring ---
+transformers>=4.40.0,<5.0.0
+accelerate>=0.30.0
+safetensors>=0.4.0
+
+# --- Quantization backend (optional: only required if running
+#     rescore_with_llm_quant.py with --quant-mode int8 or int4) ---
+bitsandbytes>=0.43.0
+
+# --- Computer vision and video I/O ---
+# MediaPipe is pinned to 0.10.14 because newer versions break the
+# four-keypoint API used by the inherited preprocessing pipeline.
+mediapipe==0.10.14
+opencv-python>=4.8.0
+av>=11.0.0
+
+# --- Tokenization ---
+sentencepiece>=0.2.0
+
+# --- Numerics and data ---
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# --- Web UI for the live demo ---
+streamlit>=1.30.0
+
+# --- Utilities ---
+tqdm>=4.65.0
